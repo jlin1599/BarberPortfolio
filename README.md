@@ -1,12 +1,66 @@
-# React + Vite
+# Spade Barber Studio Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, mobile-friendly portfolio website for Spade Barber Studio, built with React, Vite, Tailwind CSS, and deployed on Vercel.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ Fast and responsive design
+- ✂️ Service listings and gallery
+- 📱 Mobile-first, fully responsive layout
+- 🗺️ Contact info and business hours
+- 🔗 Easy online booking integration
+- 🚀 Deployed on Vercel with proper SPA routing
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+- [Vercel](https://vercel.com/)
+
+## Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/barberportfolio.git
+   cd barberportfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+5. **Preview the production build:**
+   ```bash
+   npm run preview
+   ```
+
+## Deployment
+
+This project is ready to deploy on [Vercel](https://vercel.com/):
+
+- Includes a `vercel.json` file for proper SPA routing (no 404s on refresh or direct links).
+- Connect your GitHub repo to Vercel and deploy instantly.
+
+## Customization
+
+- Update service listings in `src/pages/Services.jsx`
+- Add or update gallery images in the `src/assets/` folders
+- Edit business info in `src/pages/Contact.jsx` and `src/pages/About.jsx`
+- Change site styles in `src/index.css` or via Tailwind classes
+
+## License
+
+MIT
