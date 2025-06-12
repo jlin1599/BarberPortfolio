@@ -95,19 +95,21 @@ const Services = () => {
       <h1 className="text-4xl font-bold mb-8 text-white">Services</h1>
       <div className="space-y-6">
         {services.map((service, idx) => (
-          <div key={idx} className="flex flex-col md:flex-row md:items-center justify-between bg-black/60 rounded-xl shadow p-5 border border-yellow-400">
+          <div key={idx} className="flex flex-col md:flex-row md:items-center justify-between bg-black/60 rounded-xl shadow p-4 md:p-5 border border-yellow-400">
             <div className="flex-1">
-              <h2 className="text-xl font-semibold text-yellow-400 mb-1">{service.name}</h2>
+              <h2 className="text-lg md:text-xl font-semibold text-yellow-400 mb-1">{service.name}</h2>
               <p className="text-gray-200 text-sm mb-2 md:mb-0">{service.description}</p>
             </div>
-            <div className="flex flex-col items-end min-w-[120px] mt-4 md:mt-0 md:ml-6">
-              <span className="text-lg font-bold text-yellow-400">{service.price}</span>
-              <span className="text-xs text-gray-300">{service.duration}</span>
+            <div className="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-start min-w-[100px] md:min-w-[120px] mt-3 md:mt-0 md:ml-6">
+              <div className="flex flex-col items-start md:items-end">
+                <span className="text-base md:text-lg font-bold text-yellow-400">{service.price}</span>
+                <span className="text-xs text-gray-300">{service.duration}</span>
+              </div>
               <a
                 href={booksyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 bg-yellow-400 text-black font-semibold px-4 py-1 rounded hover:bg-yellow-500 transition text-center"
+                className="ml-4 md:ml-0 md:mt-2 bg-yellow-400 text-black font-semibold px-3 py-1 rounded hover:bg-yellow-500 transition text-center text-sm"
               >
                 Book
               </a>
